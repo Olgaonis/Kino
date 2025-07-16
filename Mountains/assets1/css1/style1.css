@@ -1,16 +1,17 @@
-* {
-    margin: 0px;
-    padding: 0px;
-} 
-/*input [type="text"], input[type="password"], input[type="search"] {
+
+html, body {
+  height: 100%;
+  margin: 0px;
+    padding: 0px;}
+
+input [type="text"], input[type="password"], input[type="search"] {
     width: 60%;
     padding: 8px;
     border: none;
 }
-input,textarea {
+input, textarea {
     outline: none,
-    border:none,
-            border: solid 1px #f2f2f2;}
+             border: solid 1px #f2f2f2;}
             h1,h2 {
                 font: normal 100% 'century gothic';
                 margin: 0 0 20px 0;
@@ -31,7 +32,7 @@ h3 {
 a, a:hover {
     color: #aeb002;
     text-decoration: underline;
-    outline: none;*/
+    outline: none;
 }
 .header {
     background-color: darkolivegreen;
@@ -45,6 +46,12 @@ a, a:hover {
 .main, .logo, .menubar, .footer, .sitecontent {
     margin-left: auto;
     margin-right: auto;
+    
+}
+.main {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .logo{
     width: 800px;
@@ -71,7 +78,7 @@ ul.menu {
     margin: 0;
     padding: 0;
     list-style: none;
-    display; flex;
+    display: flex;
     justify-content: center;
 }
 /*Стили пунктов меню*/
@@ -96,15 +103,22 @@ ul.menu li a:hover {
     color: #cdcf4f;
 }
 
- .side_content {
+ .site_content {
+    flex: 1;
+    display: flex;
     width: 880px;
-    overflow:hidden;
     margin: 20px auto 0 auto;
     background-color: white;
+
  }
  .sidebar_container {
     float: right;
     width: 224px;
+    padding: 15px;
+ }
+ .content_area {
+    flex: 1;
+    padding: 15px;
  }
  .sidebar {
     float: right;
@@ -112,7 +126,7 @@ ul.menu li a:hover {
     padding: 5%;
     margin: 0 0 16px 0;
     border: solid 5px #f2f2f2;
-    border: radius 5px;
+    border-radius: 5px;
     background-color: #f9f9f9;
  }
 .btn {
@@ -126,7 +140,7 @@ ul.menu li a:hover {
  }
  .title_main {
     font-size:22px;
-    font-weigth: bold;
+    font-weight: bold;
     font-family: 'arial', sans-serif;
  }
  .title_sub {
@@ -138,4 +152,10 @@ ul.menu li a:hover {
     font-size: 0.7em;
     margin-top: 3%;
     margin-left: 2%;
+}
+.footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
 }
