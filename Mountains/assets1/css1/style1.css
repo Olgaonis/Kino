@@ -104,8 +104,6 @@ ul.menu li a:hover {
 }
 
  .site_content {
-    flex: 1;
-    display: flex;
     width: 880px;
     margin: 20px auto 0 auto;
     background-color: white;
@@ -117,11 +115,10 @@ ul.menu li a:hover {
     padding: 15px;
  }
  .content_area {
-    flex: 1;
+    margin-right: 244px;
     padding: 15px;
  }
  .sidebar {
-    float: right;
     width: 222px;
     padding: 5%;
     margin: 0 0 16px 0;
